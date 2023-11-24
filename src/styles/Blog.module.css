@@ -1,0 +1,23 @@
+.animated-text {
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+  background-color: #ffaaaa;
+  font-size: 0px; /* 원하는 크기로 조정 */
+  opacity: 0;
+  /* transform: scale(0.9); */
+  transition:
+    font-size 0.1s,
+    opacity 0.1s;
+}
+
+.animated-text.visible {
+  font-size: 14px; /* 원하는 크기로 조정 */
+  opacity: 1;
+  /* transform: scale(1); */
+}
+
+&:hover > .testtest {
+  background-color: #ffaaaa;
+  opacity: 1;
+}

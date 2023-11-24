@@ -1,0 +1,58 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 80px;
+  color: black;
+  background: #fffe;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+
+.container {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.button_container {
+  position: relative; /* 상대적인 위치 설정 */
+  display: inline-block; /* 인라인 블록 요소로 표시 */
+  margin-right: 20px; /* 버튼과 버튼 사이의 간격 조절 */
+}
+
+.image_button {
+  width: 40px;
+}
+
+/* 세로 구분선 스타일 */
+.separator {
+  border-left: 1px solid #ddd; /* 세로 구분선의 너비 및 색상 설정 */
+  height: 30px; /* 세로 구분선의 높이 조절 */
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.description {
+  font-size: 10px;
+  opacity: 0;
+  color: #fff;
+  position: absolute;
+  bottom: -25px; /* 설명 텍스트를 버튼 아래에 표시 */
+  left: 50%;
+  padding: 5px;
+  transform: translateX(-50%);
+  background: #ffaaaa;
+  border-radius: 4px;
+  z-index: 1; /* 다른 요소 위에 표시되도록 설정 */
+  transition: opacity 10s ease;
+}
+
+.description.visible {
+  opacity: 1;
+}
